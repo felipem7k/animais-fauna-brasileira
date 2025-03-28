@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --branco: #fff;
+    --branco-cinza: #e4e4e4;
+    --verde-escuro: #465902;
+    --marrom:#7b4130d8;
+    --marrom-claro: #ffa963d8;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(178,217,37);
+    background: radial-gradient(circle, rgba(178,217,37,1) 0%, rgba(155,191,23,1) 69%, rgba(70,89,2,1) 100%); 
+
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+main {
+    background-color: var(--verde-escuro);
+    background-image: url('../imagens/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 200px;
+    gap: 2em;
+    color: var(--branco);
+
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 4px 12px;
+    border-radius: 0 0 30px 30px;
+}
+
+main p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--branco-cinza);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#animals-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4em;
+    align-items: flex-start;
+    padding: 5em;
+    flex-wrap: wrap;
+}
+
+#animals-list li {
+    background-color: var(--marrom);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid var(--marrom-claro);
+
+    width: 80%;
+    height: 600px;
+    max-width: 600px;
+    padding: 3em;
+    border-radius: 10px;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    transition: .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 4px 12px;
+}
+
+#animals-list li:hover {
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 4px 12px;
+    transform: scale(1.01);
+}
+
+
+#animals-list li #img-box {
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#animals-list li img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    transition: .6s ease-in-out;
+}
+
+#animals-list li:hover img {
+    transform: scale(1.3);
+}
+
+#animals-list li h2 {
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+#animals-list li p {
+    color: var(--branco-cinza);
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        padding: 100px;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}

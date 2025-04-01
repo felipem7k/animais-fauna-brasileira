@@ -122,10 +122,36 @@ main p {
 
 @media screen and (max-width: 850px) {
     main {
-        padding: 100px;
+        padding: 50px;
+        text-align: center;
     }
 
     main p {
+        font-size: 1em;
+    }
+
+    #animals-list {
+        padding: 5rem 0;
+        gap: 2em;
+    }
+
+    #animals-list li {
+        width: 100%;
+        padding: 2em;
+    }
+
+    #animals-list li:hover {
+        box-shadow: rgba(0, 0, 0, 0.589) 0px 4px 12px;
+        transform: none;
+    }
+
+    #animals-list li h2 {
+        font-weight: 800;
+        font-size: 1.2em;
+    }
+    
+    #animals-list li p {
+        color: var(--branco-cinza);
         font-size: 1em;
     }
 }

@@ -23,7 +23,7 @@ body {
 
 h1 {
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 main {
@@ -44,7 +44,7 @@ main {
 }
 
 main p {
-    font-size: 1.5em;
+    font-size: 2.1rem;
     font-weight: 700;
     color: var(--branco-cinza);
     text-align: center;
